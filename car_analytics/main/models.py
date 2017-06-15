@@ -9,4 +9,8 @@ class Transmision(models.Model):
 	tipoTransmision = models.CharField(max_length=10)
 	sigla=models.CharField(max_length=2)
 
+class Categoria(models.Model):
+	nombreCategoria = models.CharField(max_length=100)
+	sigla=models.CharField(max_length=10)
+	
 
