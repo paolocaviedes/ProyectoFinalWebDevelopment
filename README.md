@@ -9,6 +9,10 @@ Car Analytics le ayudará a través de todo el proceso, desde el análisis de un
 
 Car Analytics le permite optimizar el proceso de compra de su vehículo permitiéndole evaluar los factores clave del mercado y proporcionándole recomendaciones sobre cómo maximizar su ganancia.  
 
+## Stack de Tecnologías  
+Python  
+Django  
+SQLite  
 
 ## Base de Datos
 Modelo escogido: Estrella  
