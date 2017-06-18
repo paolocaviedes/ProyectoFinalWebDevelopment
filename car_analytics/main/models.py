@@ -12,5 +12,13 @@ class Transmision(models.Model):
 class Categoria(models.Model):
 	nombreCategoria = models.CharField(max_length=100)
 	sigla=models.CharField(max_length=10)
-	
 
+class Tipo(models.Model):
+	nombreTipo = models.CharField(max_length=100)
+	sigla=models.CharField(max_length=10)
+	esParticular=models.BooleanField()
+	esAutomotora=models.BooleanField()
+
+class Carroceria(models.Model):
+	nombreCarroceria = models.CharField(max_length=100)
+	sigla=models.CharField(max_length=10)
