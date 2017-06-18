@@ -1,7 +1,7 @@
 # Proyecto Final Desarrollo Web
 ## Car Analytics
 ### Automotive Business Intelligence  
-Proyecto realizado por Felipe Gajardo Osorio y Paolo Caviedes Saavedra
+_Proyecto realizado por Felipe Gajardo Osorio y Paolo Caviedes Saavedra_  
 
 Tener información precisa y confiable en la que basar las decisiones es clave para cualquier negocio es por esto que diseñamos "Car Analytics" para entregar esta informacionde diferentes maneras.  
 
