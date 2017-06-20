@@ -12,7 +12,7 @@ Car Analytics le permite optimizar el proceso de compra de su vehículo permiti�
 ## Stack de Tecnologías  
 Python  
 Django  
-SQLite
+SQLite  
 HTML  
 
 ## Base de Datos

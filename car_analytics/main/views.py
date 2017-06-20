@@ -7,6 +7,11 @@ from django.shortcuts import render
 # from django.contrib.auth import login, authenticate, logout
 # from django.contrib.auth.decorators import login_required
 
+
+def index(request):
+    context = {}
+    template = loader.get_template('app/index.html')
+    return HttpResponse(template.render(context, request))
 # Create your views here.
 
 # def nuevo_usuario(request):
