@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+
+
+
+
+<div class="row">
+<div class="card col-md-2 col-xs-2">
+
+ <!-- <p>Iniciar Sesion ? <a href={% url 'login' %}>here</a>.</p> -->
+
+
+<h2>Welcome, {{ user.get_full_name }} <small>{{ user.username }}</small>!</h2>
+<p>Has Iniciado Sesion Correctamente!</p>
+  <a type="button" class="btn btn-primary" href={% url 'logout' %}>Log Out</a>
+
+</div>
+</div>
+{% else %}
+
+
+
+<div class="row">
+<div class="card col-md-2 col-xs-2">
+  <a type="button" class="btn btn-primary" href={% url 'login' %}>Log In</a>
+ <!-- <p>Iniciar Sesion ? <a href={% url 'login' %}>here</a>.</p> -->
+
+</div>
+</div>
+{% endif %}
+{% endblock %}

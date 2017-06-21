@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from .models import Transmision,Categoria,Carroceria,Pais,Region,Ciudad,Marca,Modelo,Version,Tipo,Particular,Automotora,Contacto,Vehiculo,ContactoVehiculo,TipoCambio,Edicion
+from .models import Transmision,Categoria,Carroceria,Pais,Region,Ciudad,Marca,Modelo,Version,Tipo,Particular,Automotora,Contacto,Vehiculo,ContactoVehiculo,TipoCambio,Edicion,Profile
 
 class TransmisionAdmin(admin.ModelAdmin):
 	list_display = ('id','tipoTransmision','sigla')
@@ -74,3 +74,5 @@ admin.site.register(TipoCambio,TipoCambioAdmin)
 admin.site.register(Edicion,EdicionAdmin)
 
 # Register your models here.
+
+admin.site.register(Profile)
