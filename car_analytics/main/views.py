@@ -11,8 +11,29 @@ from django.http import HttpResponse
 
 def index(request):
     context = {}
-    template = loader.get_template('usersDashboards/index.html')
+    template = loader.get_template('usersDashboards/Admin/admin_index.html')
     return HttpResponse(template.render(context, request))
+
+def sidebar(request):
+    context = {}
+    template = loader.get_template('usersDashboards/Admin/admin_sidebar.html')
+    return HttpResponse(template.render(context, request))
+
+def new_user(request):
+    context = {}
+    template = loader.get_template('usersDashboards/Admin/admin_form_nuevousuario.html')
+    return HttpResponse(template.render(context, request))
+
+# def movie_form(request):
+
+#     template_name = 'movie/movie_form.html'
+#     form = MovieForm(request.POST or None)
+
+#     if form.is_valid() :
+#         form.save()
+#         return HttpResponseRedirect(reverse('movie_list'))
+
+#     return render(request, template_name, {'form': form})
 # Create your views here.
 
 # def nuevo_usuario(request):

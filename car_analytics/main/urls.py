@@ -8,5 +8,6 @@ urlpatterns = [
 
                 # The home page  
                 url(r'^$', views.index, name='index'),
-
+				url(r'^sidebar', views.sidebar, name='sidebar'),
+				url(r'^crear_usuario', views.new_user, name='nuevo_usuario'),
               ]
