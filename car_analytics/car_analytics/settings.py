@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'main',
     'module_users',
     'django_login',
+    'bootstrapform',
 ]
 
 MIDDLEWARE = [
