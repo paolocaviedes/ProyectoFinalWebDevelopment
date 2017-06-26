@@ -1,7 +1,7 @@
-"""car_analytics URL Configuration
+"""django_login URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/1.11/topics/http/urls/
+    https://docs.djangoproject.com/en/1.9/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -21,8 +21,19 @@ from django.conf.urls import url
 from main import views as main_views
 from main.forms import MyPasswordResetForm
 
+"""
+Could use:
+
+    urlpatterns = [
+        url('^', include('django.contrib.auth.urls')),
+    ]
+
+but for greater control the following urls are used. 
+"""
+
 urlpatterns = [
 
+    # registration with email confirmation
     url(r'^signup/$', main_views.signup, name='signup'),
     url(r'^account_activation_sent/$', main_views.account_activation_sent, 
         name='account_activation_sent'),
@@ -43,6 +54,4 @@ urlpatterns = [
 
     # admin
     url(r'^admin/', admin.site.urls),
-    url(r'^admin/', admin.site.urls),
-    # url(r'^main/templates/nuevo$','principal.views.nuevo_usuario'),
 ]
