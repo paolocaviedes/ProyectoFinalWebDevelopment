@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'module_users',
+    'django_login',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'car_analytics.wsgi.application'
+WSGI_APPLICATION = 'django_login.wsgi.application'
+LOGIN_REDIRECT_URL = 'home'
 
 
 # Database
