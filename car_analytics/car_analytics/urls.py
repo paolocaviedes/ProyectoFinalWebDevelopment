@@ -43,6 +43,6 @@ urlpatterns = [
 
     # admin
     url(r'^admin/', admin.site.urls),
-    url(r'^admin/', admin.site.urls),
+    # url(r'^admin/', admin.sqite.urls),
     # url(r'^main/templates/nuevo$','principal.views.nuevo_usuario'),
 ]
