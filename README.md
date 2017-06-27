@@ -1,7 +1,7 @@
 # Proyecto Final Desarrollo Web
 ## Car Analytics
 ### Automotive Business Intelligence  
-_Proyecto realizado por Paolo Caviedes Saavedra_    
+_Proyecto realizado por Paolo Caviedes Saavedra_   	 
 Usuario Admin : Admin | administrator 
 
 Tener información precisa y confiable en la que basar las decisiones es clave para cualquier negocio es por esto que diseñamos "Car Analytics" para entregar esta informacionde diferentes maneras.  
@@ -31,8 +31,58 @@ Para representar los requerimientos del negocio, se realizo el diseño de la bas
 
 ![Database Model Img](images/img_ModelDatabase_CarAnalyticsVFinal.png "Imagen del modelo de base de datos de Car Analytics")
 
-El proyecto cuenta con la programacion realizada para agregar/editar y eliminar usuarios, en el dashboard valla a la seccion user management para desplegar dos opciones, nuevo usuario o editar usuario.    
-Al seleccionar nuevo usuario, el sistema desplegará el formulario para agregar un usuario a la plataforma.    
+## Cargar el Proyecto ##
+
+
+### 1. Clone the repository:
+
+    git clone https://github.com/paolocaviedes/ProyectoFinalWebDevelopment.git
+
+### 2. Create a migration:
+
+    python manage.py makemigrations main
+
+### 3. Run migrations:
+
+    python manage.py migrate main
+
+### 3. Create a user (optional):
+
+    python manage.py createsuperuser
+
+### 4. Run the server:
+
+    python manage.py runserver 
+
+### 5. And open 127.0.0.1:8000/login in your web browser.
+
+
+Para ingresar, rellene el formulario inicial con las credenciales de Administrador (Admin | administrator) respetando minúsculas y Mayúsculas.  
+![Recorrido 0](images/Recorrido0.png "")   
+
+El proyecto cuenta con la programacion realizada para agregar/editar y eliminar usuarios, en el dashboard vaya a la seccion user management para desplegar dos opciones, nuevo usuario o editar usuario.      
+![Recorrido 1](images/Recorrido1.png "")  
+
+![Recorrido 2](images/Recorrido2.png "")  
+Al seleccionar nuevo usuario, el sistema desplegará el formulario para agregar un usuario a la plataforma.  
+
+![Recorrido 3](images/Recorrido3.png "")  
 Al seleccionar editar usuario, usted podrá ver todos los usuarios que existen en la plataforma, para editar un usuario basta con presionar el  primer nombre, en caso que desee eliminar un usuario, presione el boton eliminar.    
+
+![Recorrido 4](images/Recorrido4.png "")
+
+![Recorrido 5](images/Recorrido5.png "")
+
+Para cerrar sesión vaya a la esquina superior derecha, presione User Name y luego Salir. El sistema lo redireccionará a la salida. 
+
+
+![Recorrido 6](images/Recorrido6.png "")
+
+![Recorrido 7](images/Recorrido7.png "")
+
+Para Volver al Inicio, presione Log In
+
+![Recorrido 8](images/Recorrido8.png "")
+
 
 
