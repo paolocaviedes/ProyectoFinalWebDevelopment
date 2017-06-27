@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'module_users',
-    'django_login',
+    'login',
     'bootstrapform',
 ]
 
@@ -71,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_login.wsgi.application'
+WSGI_APPLICATION = 'car_analytics.wsgi.application'
 LOGIN_REDIRECT_URL = 'home'
 
 

@@ -1,5 +1,6 @@
 from django.conf.urls import url,include
 from main import views
+# from django_login import views as djlogin
 
 urlpatterns = [
                 # Matches any html file - to be used for gentella   
