@@ -1,7 +1,7 @@
 # Proyecto Final Desarrollo Web
 ## Car Analytics
 ### Automotive Business Intelligence  
-_Proyecto realizado por Paolo Caviedes Saavedra_   	 
+_Proyecto realizado por Paolo Caviedes Saavedra_     	 
 Usuario Admin : Admin | administrator 
 
 Tener información precisa y confiable en la que basar las decisiones es clave para cualquier negocio es por esto que diseñamos "Car Analytics" para entregar esta informacionde diferentes maneras.  
