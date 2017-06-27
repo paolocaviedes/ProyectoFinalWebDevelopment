@@ -32,6 +32,12 @@ urlpatterns = [
     url(r'^crear_usuario$', RegistroUsuario.as_view(), name='nuevousuario'),
     url(r'^home/crear_usuario$', RegistroUsuario.as_view(), name='nuevousuario'),
 
+    url(r'^listar_usuarios$', main_views.user_list, name='movie_list'),
+    url(r'^home/listar_usuarios$', main_views.user_list, name='movie_list'),
+
+    url(r'^edit/(?P<pk>\d+)$', main_views.user_update, name='user_edit'),
+    url(r'^delete/(?P<pk>\d+)$', main_views.user_delete, name='user_delete'),
+
 
     # admin
     url(r'^admin/', admin.site.urls),
