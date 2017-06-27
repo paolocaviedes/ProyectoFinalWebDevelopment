@@ -229,9 +229,71 @@
                       <div class="col-md-12">
                         <hr>
                         <form method="post">{% csrf_token %}
-                        {{ form.as_p }}
-                        <br>
-                        <input type="submit"  value="Enviar" class="btn btn-primary pull-right btn-lg">
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Nombre</label>
+                              <input type="text" class="form-control" name="first_name">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Apellidos</label>
+                              <input type="text" class="form-control" name="last_name">
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Nombre de usuario</label>
+                              <input type="text" class="form-control" name="username">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Correo</label>
+                              <input type="text" class="form-control" name="email">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Contraseña</label>
+                              <input type="password" class="form-control" name="password1">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              <label>Confirmar contraseña</label>
+                              <input type="password" class="form-control" name="password2">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                              
+                              <button type="submit"  value="Enviar" class="btn btn-primary pull-right btn-lg">Agregar</button>
+                            </div>
+                          </div>
+                        </div>
+
                         </form>
 
                       </div>
