@@ -19,3 +19,20 @@ from django.core.mail import EmailMultiAlternatives
 #     class Meta:
 #         model = Movie
 #         fields = ['name','description','anio','category','sort_order']
+
+
+class RegistroForm(UserCreationForm):
+	class Meta:
+		model = User
+		fields = [
+				'username',
+				'first_name',
+				'last_name',
+				'email',
+		]
+		labels = {
+				'username': 'Nombre de Usuario',
+				'first_name': 'Nombre',
+				'last_name':'Apellidos',
+				'email':'Correo',
+		}

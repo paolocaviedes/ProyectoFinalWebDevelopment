@@ -11,7 +11,11 @@ from django.template.loader import render_to_string
 from main.tokens import account_activation_token
 from django.contrib.auth import login
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+from django.views.generic import CreateView
+from django.core.urlresolvers import reverse_lazy
 
+from main.forms import RegistroForm
 
 # def login(request):
 #     context = {}
@@ -33,6 +37,11 @@ def new_user(request):
     template = loader.get_template('usersDashboards/Admin/admin_form_nuevousuario.html')
     return HttpResponse(template.render(context, request))
 
+class RegistroUsuario(CreateView):
+	model = User
+	template_name = "usersDashboards/Admin/admin_form_nuevousuario.html"
+	form_class = RegistroForm
+	success_url = reverse_lazy('home')
 # def movie_form(request):
 
 #     template_name = 'movie/movie_form.html'
