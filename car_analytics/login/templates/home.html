@@ -36,7 +36,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="admin_index.html" class="site_title"><i class="fa fa-automobile"></i> <span>Car Analytics</span><i class="fa fa-bar-chart"></i></a>
+              <a href="/home" class="site_title"><i class="fa fa-automobile"></i> <span>Car Analytics</span><i class="fa fa-bar-chart"></i></a>
             </div>
 
             <div class="clearfix"></div>
@@ -114,7 +114,8 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="/static/images/img.jpg" alt="">User Name
+                    <img src="/static/images/img.jpg" alt="">
+                          User Name
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -170,7 +171,9 @@
                       <a>
                         <span class="image"><img src="/static/images/img.jpg" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
+                        {% block content %}
+                          <span>{{User.username}}</span>
+                          {% endblock %}
                           <span class="time">3 mins ago</span>
                         </span>
                         <span class="message">
